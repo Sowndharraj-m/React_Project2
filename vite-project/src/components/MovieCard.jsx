@@ -13,10 +13,11 @@ function MovieCard({ movie }) {
 
             <div className="MovieInfo">
                 <p>{movie.title}</p>
+                <p>{movie.releaseDate}</p>
                 <p>{movie.rating}</p>
                 <p>{movie.description}</p>
             </div>
-</>
+        </>
     );
 }
 export default MovieCard;
