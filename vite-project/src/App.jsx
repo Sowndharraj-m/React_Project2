@@ -1,15 +1,17 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import MovieCard from './components/MovieCard'
 
 function App() {
-   return (
-  <div>
-    <h1>I'm Sowndhar</h1>
-    <h1>I'm a Developer</h1>
- </div>
-)
-}
 
+   const Movienumber = 2
+   return (
+
+      /* (Movienumber == 2) ?
+         (<MovieCard movie={{ title: "RRR", rating: 8.5, description: "RRR is a 2022 Indian Telugu-language epic action drama film directed by S. S. Rajamouli." }} /> )
+         : 
+         (<MovieCard movie={{ title: "Master", rating: 8.5, description: "Master is a 2021 Indian Tamil-language action drama film directed by Lokesh Kanagaraj." }} />) */
+      (Movienumber == 2 && (<MovieCard movie={{ title: "RRR", rating: 8.5, description: "RRR is a 2022 Indian Telugu-language epic action drama film directed by S. S. Rajamouli." }} />)
+      )
+   )
+}
 export default App
